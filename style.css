@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 12px 0 10px solid black;
+    width: 500px;
+    height: 300px;
+    margin-top: 5rem;
+}
+
+.container .celsius {
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 0, 0, 0.7);
+    height: 33.3333%;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .celsius input {
+    width: 190px;
+    height: 30px;
+    margin-right: 1.3rem;
+    font-size: 15px;
+}
+
+.container .fehrenheit {
+    display: block;
+    width: 100%;
+    background-color: rgb(0, 128, 0, 0.7);
+    height: 33.3333%;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .fehrenheit input {
+    width: 190px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.container .kelvin {
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 255, 0, 0.7);
+    height: 33.3333%;
+    text-align: end;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .kelvin input {
+    width: 190px;
+    height: 30px;
+    margin-right: 1.9rem;
+    font-size: 15px;
+}

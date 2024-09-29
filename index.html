@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="celsius">            
+            <input type="number" name="" id="celsius">
+            <h4>Celsius</h4>
+        </div>
+        <div class="fehrenheit">
+            <input type="text" name="" id="fehrenheit" readonly>
+            <h4>fehrenheit</h4>
+        </div>
+        <div class="kelvin">
+            <input type="text" name="" id="kelvin" readonly>
+            <h4>kelvin</h4>
+        </div>
+    </div>
+
+
+    <script>
+        // $(document).ready(function(){
+        //     $("button").on("click", function(){
+        //         const Celsius = $("#celsius").val();
+        //         if (Celsius != ""){
+        //             const CtoF = $('#celsius').val() * 9/5 + 32;
+        //             $("#fehrenheit").val(CtoF + "°F");
+        //             const CtoK = parseInt($('#celsius').val()) + 273.15;
+        //             $("#kelvin").val(CtoK + " K");
+        //         } else {
+        //             alert ("please enter temperature in Celsius");
+        //         };
+
+        //         $('#celsius').focus().select().val()
+        //     });
+        // });
+
+
+        $(document).ready(function(){
+            $("#celsius").on("keyup", function(){
+                const Celsius = $("#celsius").val();
+                if (Celsius != ""){
+                    const CtoF = $('#celsius').val() * 9/5 + 32;
+                    $("#fehrenheit").val(CtoF + "°F");
+                    const CtoK = parseInt($('#celsius').val()) + 273.15;
+                    $("#kelvin").val(CtoK + " K");
+                } else {
+                    $("#fehrenheit").val("");
+                    $("#kelvin").val("");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
